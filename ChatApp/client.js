@@ -1,4 +1,5 @@
-const socket = io.connect('http://localhost:3005')
+// const socket = io.connect('http://localhost:3005')
+const socket = io.connect('https://node-socket-redis.istef.ml:3005')
 
 const status = document.querySelector('#status')
 

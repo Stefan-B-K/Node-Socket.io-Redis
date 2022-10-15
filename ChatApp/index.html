@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Chat Server</title>
+</head>
+
+<body>
+<aside class="card" style="margin: 20px;">
+      <header class="card-header">
+            <p class="card-header-title">
+                  <span id="status" style="color: #d57603; margin-left: 10px;">connecting...</span>
+            </p>
+      </header>
+
+
+      <div class="columns" style="padding: 0; margin: 0">
+
+            <aside class="column is-2 is-narrow-mobile is-hidden-mobile menu"
+                   style="background: rgba(219,255,219,0.75)">
+                  <p class="menu-label">
+                        Users
+                  </p>
+                  <ul id="users" class="menu-list"></ul>
+            </aside>
+
+            <div class="column chat-container">
+
+                  <div class="messages"></div>
+
+                  <div class="columns is-gapless input-area">
+                        <div class="column"><input class="input" type="text"></div>
+                        <div class="column is-1">
+                              <button class="button">Send</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</aside>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+</body>
+
+</html>

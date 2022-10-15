@@ -1,0 +1,37 @@
+.message {
+    padding: 0.5rem;
+    margin: 10px 10px 10px auto;
+    background: rgba(230, 255, 230, 0.47);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(253, 237, 225, 0.23);
+    height: 85vh;
+}
+
+.messages {
+    flex-grow: 1;
+    height: 100%;
+    overflow:auto;
+}
+
+.input-area {
+    align-self: end;
+    width: 100%;
+    margin: 10px auto;
+    padding-right: 10px;
+}
+
+.user {
+    background: rgba(200, 250, 200, 0.89);
+}
+
+.me {
+    background: rgba(255, 225, 222, 0.45);
+}
+
+li {
+    margin: 5px auto;
+}

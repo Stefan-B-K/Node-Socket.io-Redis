@@ -1,6 +1,11 @@
 const express = require('express')
 const path = require('path')
-const { Server } = require('socket.io')
+const { Server } = require('socket.io', {
+    cors: {
+        origin: "https://node-socket-redis.istef.ml",
+        methods: ["GET", "POST"]
+    }
+})
 
 const app = express()
 const server = require('http').createServer(app)
